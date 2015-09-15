@@ -1,4 +1,5 @@
-
+# Makefile to execute all the commands to do stuff.
+# 'make flash' will compile stuff and send it to the AVR.
 TARGET_ARCH=-mmcu=attiny13
 
 CC=avr-gcc
