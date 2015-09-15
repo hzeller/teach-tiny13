@@ -7,8 +7,8 @@
 #include <util/delay.h>
 
 int main() {
-	DDRB = LED_PIN;
-	for (;;) {
+	DDRB = LED_PIN;           // Data direction register: LED_PIN is output
+	while (true) {
 		PORTB = LED_PIN;  // Switch LED on
 		_delay_ms(100);   // Wait time on
 		PORTB = 0;        // Switch LED off
